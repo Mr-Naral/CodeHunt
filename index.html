@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeHunt Event</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Description container shown at the start -->
+    <div id="description-container">
+        <h1>Welcome to CodeHunt!</h1>
+        <p>
+            Test your problem-solving and coding skills! Answer a series of 20 questions, with each new question
+            unlocked after entering the correct code for the previous one. The answer code for each question is
+            simply the question number. Good luck!
+        </p>
+        <button id="start-button">Start CodeHunt</button>
+    </div>
+
+    <!-- Question container hidden at the beginning -->
+    <div id="question-container" style="display: none;"> <!-- Initially hidden -->
+        <div id="timer"></div>
+       
+        <div id="question-box">
+            <h2 id="question-number">Question 1</h2>
+            <img id="question-image" src="1.jpg" alt="Question" class="question-image">
+        </div>
+        <input type="text" id="code-input" placeholder="Enter your code">
+        <button id="submit-code">Submit Code</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
